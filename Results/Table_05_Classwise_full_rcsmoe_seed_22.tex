@@ -1,0 +1,47 @@
+\begin{table*}[t]
+\centering
+\caption{Fine-grained class performance of the complete RCS-MoE model.}
+\label{tab:table_05_classwise_full_rcsmoe_seed_22}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Class & Precision & Recall & F1 & Support & False negatives & Is rare \\
+\midrule
+Uploading\_Attack & 0.0000 & 0.0000 & 0.0000 & 3 & 3 & True \\
+Recon-PingSweep & 0.0018 & 0.2000 & 0.0036 & 5 & 4 & True \\
+BrowserHijacking & 0.0072 & 0.0769 & 0.0132 & 13 & 12 & True \\
+XSS & 0.0079 & 0.1000 & 0.0146 & 10 & 9 & True \\
+CommandInjection & 0.0211 & 0.3333 & 0.0396 & 12 & 8 & True \\
+Backdoor\_Malware & 0.0309 & 0.6667 & 0.0591 & 9 & 3 & True \\
+Mirai-greip\_flood & 0.6667 & 0.0394 & 0.0744 & 1928 & 1852 & False \\
+SqlInjection & 0.0451 & 0.4000 & 0.0811 & 15 & 9 & True \\
+Recon-OSScan & 0.3000 & 0.0617 & 0.1024 & 243 & 228 & False \\
+DictionaryBruteForce & 0.1132 & 0.1875 & 0.1412 & 32 & 26 & True \\
+Recon-PortScan & 0.4222 & 0.0913 & 0.1502 & 208 & 189 & False \\
+DoS-TCP\_Flood & 0.6409 & 0.1018 & 0.1757 & 6770 & 6081 & False \\
+DNS\_Spoofing & 0.4469 & 0.2670 & 0.3342 & 457 & 335 & False \\
+DDoS-SlowLoris & 0.3218 & 0.9032 & 0.4746 & 62 & 6 & True \\
+DoS-SYN\_Flood & 0.6370 & 0.4781 & 0.5462 & 5112 & 2668 & False \\
+DDoS-HTTP\_Flood & 0.5158 & 0.6901 & 0.5904 & 71 & 22 & True \\
+VulnerabilityScan & 0.4359 & 0.9341 & 0.5944 & 91 & 6 & True \\
+Recon-HostDiscovery & 0.7012 & 0.5285 & 0.6027 & 333 & 157 & False \\
+DoS-UDP\_Flood & 0.7791 & 0.4942 & 0.6048 & 8363 & 4230 & False \\
+MITM-ArpSpoofing & 0.7662 & 0.5268 & 0.6243 & 784 & 371 & False \\
+DoS-HTTP\_Flood & 0.6816 & 0.7611 & 0.7192 & 180 & 43 & False \\
+Mirai-greeth\_flood & 0.5717 & 0.9824 & 0.7227 & 2493 & 44 & False \\
+DDoS-SynonymousIP\_Flood & 0.9535 & 0.6099 & 0.7439 & 9048 & 3530 & False \\
+DDoS-TCP\_Flood & 0.6448 & 0.9662 & 0.7735 & 11374 & 384 & False \\
+BenignTraffic & 0.8670 & 0.7225 & 0.7882 & 2771 & 769 & False \\
+DDoS-SYN\_Flood & 0.6696 & 0.9605 & 0.7891 & 10221 & 404 & False \\
+DDoS-UDP\_Flood & 0.7484 & 0.9135 & 0.8227 & 13672 & 1183 & False \\
+DDoS-ICMP\_Fragmentation & 0.9866 & 0.9702 & 0.9783 & 1140 & 34 & False \\
+DDoS-ACK\_Fragmentation & 0.9755 & 0.9835 & 0.9795 & 729 & 12 & False \\
+DDoS-UDP\_Fragmentation & 0.9860 & 0.9751 & 0.9805 & 722 & 18 & False \\
+Mirai-udpplain & 0.9987 & 0.9938 & 0.9962 & 2254 & 14 & False \\
+DDoS-PSHACK\_Flood & 0.9996 & 0.9978 & 0.9987 & 10333 & 23 & False \\
+DDoS-ICMP\_Flood & 0.9999 & 0.9987 & 0.9993 & 18045 & 23 & False \\
+DDoS-RSTFINFlood & 1.0000 & 0.9987 & 0.9994 & 10182 & 13 & False \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

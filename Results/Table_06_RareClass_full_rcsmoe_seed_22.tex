@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\caption{Rare-class performance of the complete RCS-MoE model.}
+\label{tab:table_06_rareclass_full_rcsmoe_seed_22}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Class & Precision & Recall & F1 & Support & False negatives & Is rare \\
+\midrule
+Uploading\_Attack & 0.0000 & 0.0000 & 0.0000 & 3 & 3 & True \\
+Recon-PingSweep & 0.0018 & 0.2000 & 0.0036 & 5 & 4 & True \\
+BrowserHijacking & 0.0072 & 0.0769 & 0.0132 & 13 & 12 & True \\
+XSS & 0.0079 & 0.1000 & 0.0146 & 10 & 9 & True \\
+CommandInjection & 0.0211 & 0.3333 & 0.0396 & 12 & 8 & True \\
+Backdoor\_Malware & 0.0309 & 0.6667 & 0.0591 & 9 & 3 & True \\
+SqlInjection & 0.0451 & 0.4000 & 0.0811 & 15 & 9 & True \\
+DictionaryBruteForce & 0.1132 & 0.1875 & 0.1412 & 32 & 26 & True \\
+DDoS-SlowLoris & 0.3218 & 0.9032 & 0.4746 & 62 & 6 & True \\
+DDoS-HTTP\_Flood & 0.5158 & 0.6901 & 0.5904 & 71 & 22 & True \\
+VulnerabilityScan & 0.4359 & 0.9341 & 0.5944 & 91 & 6 & True \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

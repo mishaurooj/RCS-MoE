@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Component ablation relative to the complete RCS-MoE model.}
+\label{tab:table_03_ablationdeltas}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrrrrrrrrrrr}
+\toprule
+Variant & macro\_f1 & delta\_macro\_f1 & balanced\_accuracy & delta\_balanced\_accuracy & family\_macro\_f1 & delta\_family\_macro\_f1 & rare\_class\_recall & delta\_rare\_class\_recall & ece & delta\_ece & latency\_ms\_per\_sample & delta\_latency\_ms\_per\_sample & edge\_route\_rate & delta\_edge\_route\_rate & specialist\_route\_rate & delta\_specialist\_route\_rate & cloud\_route\_rate & delta\_cloud\_route\_rate \\
+\midrule
+fixed\_edge\_only & 0.5538 & 0.0295 & 0.6150 & 0.0307 & 0.5451 & 0.0113 & 0.1787 & -0.0570 & 0.1071 & 0.0215 & 0.0538 & -0.0035 & 1.0000 & 1.0000 & 0.0000 & -0.9982 & 0.0000 & -0.0018 \\
+fixed\_cloud\_only & 0.5474 & 0.0231 & 0.5928 & 0.0085 & 0.5506 & 0.0168 & 0.1928 & -0.0428 & 0.0627 & -0.0230 & 0.0562 & -0.0011 & 0.0000 & 0.0000 & 0.0000 & -0.9982 & 1.0000 & 0.9982 \\
+no\_cost\_objective & 0.5280 & 0.0037 & 0.5934 & 0.0091 & 0.5548 & 0.0210 & 0.2300 & -0.0057 & 0.0868 & 0.0011 & 0.0561 & -0.0012 & 0.0000 & 0.0000 & 0.9978 & -0.0004 & 0.0022 & 0.0004 \\
+full\_rcsmoe & 0.5243 & 0.0000 & 0.5843 & 0.0000 & 0.5338 & 0.0000 & 0.2357 & 0.0000 & 0.0857 & 0.0000 & 0.0573 & 0.0000 & 0.0000 & 0.0000 & 0.9982 & 0.0000 & 0.0018 & 0.0000 \\
+no\_rarity\_conditioning & 0.5215 & -0.0028 & 0.5801 & -0.0042 & 0.5370 & 0.0032 & 0.2218 & -0.0139 & 0.0834 & -0.0022 & 0.0543 & -0.0030 & 0.0000 & 0.0000 & 0.9982 & -0.0001 & 0.0018 & 0.0001 \\
+no\_family\_objective & 0.5196 & -0.0047 & 0.5725 & -0.0118 & 0.0499 & -0.4839 & 0.1977 & -0.0380 & 0.0721 & -0.0136 & 0.0554 & -0.0019 & 0.0000 & 0.0000 & 0.9985 & 0.0003 & 0.0015 & -0.0003 \\
+no\_sparse\_experts & 0.5195 & -0.0048 & 0.5771 & -0.0071 & 0.5329 & -0.0009 & 0.1701 & -0.0655 & 0.0976 & 0.0120 & 0.0586 & 0.0013 & 0.4903 & 0.4903 & 0.5087 & -0.4895 & 0.0010 & -0.0008 \\
+no\_ood\_reconstruction & 0.4866 & -0.0377 & 0.5434 & -0.0409 & 0.5110 & -0.0228 & 0.1722 & -0.0635 & 0.0902 & 0.0046 & 0.0569 & -0.0004 & 0.0000 & 0.0000 & 0.9986 & 0.0004 & 0.0014 & -0.0004 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

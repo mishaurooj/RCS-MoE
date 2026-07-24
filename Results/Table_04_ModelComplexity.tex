@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+\caption{Parameter count and checkpoint storage of pretrained neural variants.}
+\label{tab:table_04_modelcomplexity}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Method & Seed & Parameters & Trainable parameters & Checkpoint size (MB) & Parameter memory FP32 (MB) \\
+\midrule
+fixed\_cloud\_only & 11 & 144496 & 144496 & 0.5799 & 0.5512 \\
+fixed\_cloud\_only & 22 & 144496 & 144496 & 0.5799 & 0.5512 \\
+fixed\_edge\_only & 11 & 144496 & 144496 & 0.5799 & 0.5512 \\
+fixed\_edge\_only & 22 & 144496 & 144496 & 0.5799 & 0.5512 \\
+full\_rcsmoe & 11 & 144496 & 144496 & 0.5796 & 0.5512 \\
+full\_rcsmoe & 22 & 144496 & 144496 & 0.5796 & 0.5512 \\
+no\_cost\_objective & 11 & 144496 & 144496 & 0.5800 & 0.5512 \\
+no\_cost\_objective & 22 & 144496 & 144496 & 0.5800 & 0.5512 \\
+no\_family\_objective & 11 & 144496 & 144496 & 0.5803 & 0.5512 \\
+no\_family\_objective & 22 & 144496 & 144496 & 0.5803 & 0.5512 \\
+no\_ood\_reconstruction & 11 & 144496 & 144496 & 0.5805 & 0.5512 \\
+no\_ood\_reconstruction & 22 & 144496 & 144496 & 0.5805 & 0.5512 \\
+no\_rarity\_conditioning & 11 & 144496 & 144496 & 0.5806 & 0.5512 \\
+no\_rarity\_conditioning & 22 & 144496 & 144496 & 0.5806 & 0.5512 \\
+no\_sparse\_experts & 11 & 144496 & 144496 & 0.5800 & 0.5512 \\
+no\_sparse\_experts & 22 & 144496 & 144496 & 0.5800 & 0.5512 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}
