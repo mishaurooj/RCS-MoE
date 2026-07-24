@@ -94,15 +94,6 @@ ROOT = Path("/home/user/CARE-IoT")
 
 The script creates and reuses fixed stratified subsets with data-split seed 42:
 
-```text
-Datasets/CICIOT23_FIXED_20_10_10/
-├── train_20pct_seed42.csv
-├── validation_10pct_seed42.csv
-├── test_10pct_seed42.csv
-└── split_metadata.json
-```
-
-The configured fractions are 20% of the source training file, 10% of validation, and 10% of test. All methods and model seeds reuse the same sampled rows.
 
 ## Run the complete RCS-MoE experiment
 
